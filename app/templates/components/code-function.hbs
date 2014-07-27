@@ -1,0 +1,11 @@
+<div class="function" data-toggle="tooltip" data-placement="auto" {{bind-attr title=function.documentation}}>
+  <button class="toggle" data-toggle="collapse" {{bind-attr data-target=functionSelector}}><span class="icon fa fa-plus-square-o"></span></button>
+  <span class="return-type">{{function.returnType.name}}</span><span class="function-name">{{function.name}}</span> (
+  {{#each parameter in function.parameters}}
+    <span class="parameter">{{parameter.type.name}} {{parameter.name}}</span>
+  {{/each}})
+
+  <div {{bind-attr id=functionId}} class="function-body collapse">
+    {{function.body}}
+  </div>
+</div>

@@ -2,7 +2,7 @@ module.exports = function(app) {
   var functionStore = require('../../store').create();
 
   functionStore.addObject({ name: "sayHello", returnType: 3, parameters: [1], body: "return \"Hello \" + name", documentation: "This is the documentation for f1" });
- // functionStore.addObject({ name: "f2", returnType: 2, body: "This is the f2 body",  documentation: "This is the docs for f2" })
+  functionStore.addObject({ name: "f2", returnType: 2, body: "This is the f2 body",  documentation: "This is the docs for f2" })
 
   var parameterStore = require('../../store').create();
 
