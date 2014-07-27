@@ -1,6 +1,12 @@
 # Code-easy
 
-This README outlines the details of collaborating on this Ember application.
+CodeEasy is an experimental app for developing code.  The idea is to create
+a structured editor on top of an AST, and have the back-end compile the AST.
+
+Right now, I'm experimenting with functions.  Once you have the code running
+under ember server, naviage to http://localhost:4200/functions
+
+#Contributing
 
 ## Installation
 

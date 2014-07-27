@@ -17,4 +17,18 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-module.exports = app.toTree();
+app.import('vendor/font-awesome/css/font-awesome.css');
+app.import('vendor/bootstrap/dist/js/bootstrap.js');
+app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-core.max.js');
+app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-nav.max.js');
+
+var mergeTrees = require('broccoli-merge-trees');
+var pickFiles = require('broccoli-static-compiler');
+
+var fontTree = pickFiles('vendor/font-awesome/fonts', {
+  srcDir: '/',
+  files: ['*'],
+  destDir: '/fonts'
+});
+
+module.exports = mergeTrees([app.toTree(), fontTree]);

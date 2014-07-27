@@ -1,14 +1,20 @@
 module.exports = function(app) {
+  var store = require('../../store').create();
+
+  store.addObject({name: "int"});
+  store.addObject({name: "boolean"});
+  store.addObject({name: "String"});
+  
   var express = require('express');
   var astTypesRouter = express.Router();
+
   astTypesRouter.get('/', function(req, res) {
-    res.send({"ast/types":[{id: 1, name: "int"}, {id: 2, name: "boolean"}]});
+    res.send({ "ast/types": store.getObjects() });
   });
+
   astTypesRouter.get("/:id", function(req, res) {
-    if(req.params.id == 1)
-      res.send({"ast/type": {id: 1, name: "int"}});
-    else
-      res.send({"ast/type": {id: 2, name: "boolean"}});
+    res.send({ "ast/type": store.getObject(req.params.id) });
   });
+
   app.use('/api/ast/types', astTypesRouter);
 };

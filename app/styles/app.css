@@ -1,3 +1,63 @@
 html, body {
   margin: 20px;
 }
+
+.return-type {
+  border-radius: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 3px;
+  background-color: #ffcc00;
+}
+
+.function-name {
+  border-radius: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 3px;
+  background-color: #00ffff;
+}
+
+.parameter {
+  border-radius: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 3px;
+  background-color: #00ff00;
+}
+
+.toggle {
+  background-color: inherit;
+  border: none;
+  text-decoration: none !important;
+  width: 20px;
+  height: 20px;
+}
+
+.toggle:focus {
+  outline: 0;
+}
+
+.icon {
+  display: none;
+}
+
+.function {
+  border: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+
+.function:hover {
+  border: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.function:hover .icon {
+  display: inline;
+}
+
+.function-body {
+  margin-left: 35px;
+}
