@@ -1,5 +1,5 @@
 <select class="item-selection">
   {{#each choice in choices}}
-    <option {{bind-attr value=choice.value}}>{{choice.label}}</option>
+    <option {{bind-attr value=choice.value}} {{bind-attr selected=choice.selected}}>{{choice.label}}</option>
   {{/each}}
 </select>

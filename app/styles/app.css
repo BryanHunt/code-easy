@@ -2,14 +2,6 @@ html, body {
   margin: 20px;
 }
 
-.return-type {
-  border-radius: 5px;
-  padding-left: 2px;
-  padding-right: 2px;
-  margin-left: 3px;
-  background-color: #ffcc00;
-}
-
 .function-name {
   border-radius: 5px;
   padding-left: 2px;
