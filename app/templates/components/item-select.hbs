@@ -1,0 +1,5 @@
+<select class="item-selection">
+  {{#each choice in choices}}
+    <option {{bind-attr value=choice.value}}>{{choice.label}}</option>
+  {{/each}}
+</select>
