@@ -53,3 +53,7 @@ html, body {
 .function-body {
   margin-left: 35px;
 }
+
+.keyword-return {
+  color: red;
+}

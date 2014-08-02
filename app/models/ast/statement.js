@@ -3,7 +3,7 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   text: DS.attr('string'),
 
-  fullText: function() {
-    return this.get('text');
-  }.property('text')
+  isReturn : function() {
+    return false;
+  }.property()
 });
