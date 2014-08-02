@@ -9,6 +9,7 @@ export default Ember.Component.extend({
     var self = this;
     this.set('choices', Ember.A());
 
+    // TODO This is very hacky - need to find a better way to do a slect that doesn't suck
     this.get('selected').then(function(selected) {
       self.get('items').then(function(items){    
         items.forEach(function(item){

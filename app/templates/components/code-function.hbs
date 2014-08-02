@@ -2,10 +2,10 @@
   <button class="toggle" data-toggle="collapse" {{bind-attr data-target=bodySelector}}><span class="icon fa fa-plus-square-o"></span></button>
   {{item-select class="return-type" items=types labelPath='name' valuePath="id" selected=function.returnType}}<span class="function-name">{{function.name}}</span> (
   {{#each parameter in function.parameters}}
-    <span class="parameter">{{parameter.type.name}} {{parameter.name}}</span>
+    <span class="parameter"><span class="parameter-type">{{parameter.type.name}}</span> <span class="parameter-name">{{parameter.name}}</span></span>
   {{/each}})
 
   <div {{bind-attr id=bodyId}} class="function-body collapse">
-    {{function.body}}
+    {{code-block block=function.body}}
   </div>
 </div>
