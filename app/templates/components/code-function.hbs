@@ -1,5 +1,5 @@
 <div class="function" data-toggle="tooltip" data-placement="auto" {{bind-attr title=function.documentation}}>
-  <button class="toggle" data-toggle="collapse" {{bind-attr data-target=bodySelector}}><span class="icon fa fa-plus-square-o"></span></button>
+  {{expander-button bodySelector}}
   {{item-select class="return-type" items=types labelPath='name' valuePath="id" selected=function.returnType}}<span class="function-name">{{function.name}}</span> (
   {{#each parameter in function.parameters}}
     <span class="parameter"><span class="parameter-type">{{parameter.type.name}}</span> <span class="parameter-name">{{parameter.name}}</span></span>
