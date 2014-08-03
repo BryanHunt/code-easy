@@ -2,7 +2,7 @@ import { test, moduleForComponent } from 'ember-qunit';
 
 moduleForComponent('return-statement', 'ReturnStatementComponent', {
   // specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
+  needs: ['component:code-statement']
 });
 
 test('it renders', function() {
