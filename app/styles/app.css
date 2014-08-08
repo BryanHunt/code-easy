@@ -57,3 +57,7 @@ html, body {
 .keyword-return {
   color: red;
 }
+
+.keyword-class {
+  color: red;
+}

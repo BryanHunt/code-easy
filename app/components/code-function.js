@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  bodyId: function() {
+  expandableElementId: function() {
     return this.get('function.name') + this.get('function.id');
   }.property('function.name'),
 
-  bodySelector: function() {
-    return "#" + this.get('bodyId');
-  }.property('bodyId')
+  expandableElementSelector: function() {
+    return "#" + this.get('expandableElementId');
+  }.property('expandableElementId')
 });
