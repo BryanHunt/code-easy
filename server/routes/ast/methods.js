@@ -12,7 +12,7 @@ module.exports = function(app) {
     returnType: 3, 
     parameters: [1], 
     body: 1, 
-    documentation: "This is the documentation for f1",
+    documentation: "Says hello to the person specified by name",
     visibility: 1
   };
 
