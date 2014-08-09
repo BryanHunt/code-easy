@@ -1,10 +1,22 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Experimental Stuff</h3>
+    <h3 class="panel-title">Class Display</h3>
   </div>
   <div class="panel-body">
     {{#each class in model}}
       {{code-class c=class types=types}}
     {{/each}}
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Styles</h3>
+  </div>
+  <div class="panel-body">
+    {{#each style in styles}}
+      {{css-style style=style}}
+    {{/each}}
+    {{bs-button type="primary" title="Apply" clicked="applyStyles"}}
   </div>
 </div>

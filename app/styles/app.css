@@ -40,12 +40,13 @@ html, body {
 
 .class {
   border-radius: 5px;
-  background-color: rgba(55, 179, 142, 0.1);
+  background-color: rgba(65, 150, 59, 0.1);
+  padding-bottom: 3px;
 }
 
 .function {
   border-radius: 5px;
-  background-color: rgba(55, 135, 179, 0.1);
+  background-color: rgba(55, 135, 179, 0.2);
   margin-top: 3px;
   margin-bottom: 3px;
   margin-left: 10px;
