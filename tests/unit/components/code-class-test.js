@@ -2,7 +2,7 @@ import { test, moduleForComponent } from 'ember-qunit';
 
 moduleForComponent('code-class', 'CodeClassComponent', {
   // specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
+  needs: ['helper:expander-button']
 });
 
 test('it renders', function() {

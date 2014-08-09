@@ -2,6 +2,7 @@
   "predef": {
     "document": true,
     "window": true,
+    "vein": true,
     "CodeEasyENV": true
   },
   "browser" : true,

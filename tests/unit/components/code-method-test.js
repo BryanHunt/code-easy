@@ -2,7 +2,7 @@ import { test, moduleForComponent } from 'ember-qunit';
 
 moduleForComponent('code-method', 'CodeMethodComponent', {
   // specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
+  needs: ['helper:expander-button', 'component:code-function-signature', 'component:code-block']
 });
 
 test('it renders', function() {

@@ -2,7 +2,7 @@ import { test, moduleForComponent } from 'ember-qunit';
 
 moduleForComponent('code-function-signature', 'CodeFunctionSignatureComponent', {
   // specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
+  needs: ['component:item-select', 'helper:expander-button']
 });
 
 test('it renders', function() {

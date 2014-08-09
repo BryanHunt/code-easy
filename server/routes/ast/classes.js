@@ -1,6 +1,5 @@
 module.exports = function(app) {
   var store = require('../../store');
-
   var classes = store.create();
 
   var c1 = {

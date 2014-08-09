@@ -2,7 +2,7 @@ import { test, moduleForComponent } from 'ember-qunit';
 
 moduleForComponent('code-function', 'CodeFunctionComponent', {
   // specify the other units that are required for this test
-  needs: ['component:item-select']
+  needs: ['component:item-select', 'helper:expander-button', 'component:code-function-signature', 'component:code-block']
 });
 
 test('it renders', function() {

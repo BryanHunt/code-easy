@@ -3,7 +3,7 @@
 CodeEasy is an experimental app for developing code.  The idea is to create
 a structured editor on top of an AST, and have the back-end compile the AST.
 
-Right now, I'm experimenting with functions.
+Right now, I'm experimenting with classes and methods.
 
 #Contributing
 
@@ -27,4 +27,4 @@ Right now, I'm experimenting with functions.
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://iamstef.net/ember-cli/](http://iamstef.net/ember-cli/).
+For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
