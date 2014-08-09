@@ -5,6 +5,8 @@ a structured editor on top of an AST, and have the back-end compile the AST.
 
 Right now, I'm experimenting with classes and methods.
 
+![](https://raw.githubusercontent.com/BryanHunt/code-easy/master/screenshot.png)
+
 #Contributing
 
 ## Installation
