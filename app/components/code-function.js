@@ -1,11 +1,5 @@
 import Ember from 'ember';
+import Expandable from '../mixins/expandable';
 
-export default Ember.Component.extend({
-  expandableElementId: function() {
-    return this.get('function.name') + this.get('function.id');
-  }.property('function.name'),
-
-  expandableElementSelector: function() {
-    return "#" + this.get('expandableElementId');
-  }.property('expandableElementId')
+export default Ember.Component.extend(Expandable, {
 });

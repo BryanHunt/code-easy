@@ -1,4 +1,9 @@
-<span class="keyword keyword-class">class</span>  {{c.name}}
-{{#each method in c.methods}}
-  {{code-method function=method types=types}}
-{{/each}}
+<div class="class">
+  {{expander-button expandableElementSelector}}
+  <span class="keyword keyword-class">class</span>  {{c.name}}
+  <div {{bind-attr id=expandableElementId}} class="class-body collapse">
+    {{#each method in c.methods}}
+      {{code-method function=method types=types}}
+    {{/each}}
+  </div>
+</div>
