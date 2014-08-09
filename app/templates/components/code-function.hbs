@@ -1,10 +1,7 @@
 <div class="function" data-toggle="tooltip" data-placement="auto" {{bind-attr title=function.documentation}}>
   {{expander-button expandableElementSelector}}
-  {{item-select class="return-type" items=types labelPath='name' valuePath="id" selected=function.returnType}}<span class="function-name">{{function.name}}</span> (
-  {{#each parameter in function.parameters}}
-    <span class="parameter"><span class="parameter-type">{{parameter.type.name}}</span> <span class="parameter-name">{{parameter.name}}</span></span>
-  {{/each}})
-
+  {{code-function-signature function=function types=types}}
+  
   <div {{bind-attr id=expandableElementId}} class="function-body collapse">
     {{code-block block=function.body}}
   </div>

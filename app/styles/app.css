@@ -18,6 +18,10 @@ html, body {
 //  background-color: #00ff00;
 }
 
+.parameter-type {
+  color: red;
+}
+
 .toggle {
   background-color: inherit;
   border: none;
@@ -42,8 +46,8 @@ html, body {
 .function {
   border-radius: 5px;
   background-color: rgba(55, 135, 179, 0.1);
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   margin-left: 10px;
   margin-right: 10px;
 }
