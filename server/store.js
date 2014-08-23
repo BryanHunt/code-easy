@@ -1,6 +1,6 @@
-var Store = function() {
+var Store = function(startId) {
   return {
-    nextId: 1,
+    nextId: startId ? startId : 1,
     data: {},
 
     getObject: function(id) {
@@ -23,7 +23,7 @@ var Store = function() {
     },
 
     addObject: function(object) {
-      object['id'] = this.nextId;
+      object['_id'] = this.nextId;
       this.data[this.nextId] = object;
       this.nextId++;
       return object;
@@ -40,7 +40,7 @@ var Store = function() {
 };
 
 module.exports = {
-  create: function() {
-    return new Store();
+  create: function(startId) {
+    return new Store(startId);
   }
 };

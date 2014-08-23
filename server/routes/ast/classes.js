@@ -1,13 +1,20 @@
 module.exports = function(app) {
   var store = require('../../store');
-  var classes = store.create();
+  var classes = store.create(8);
 
   var c1 = {
+    name: "String",
+    methods: []
+  };
+
+  classes.addObject(c1);
+
+  var c2 = {
     name: "Hello",
     methods: [1, 2]
   };
 
-  classes.addObject(c1);
+  classes.addObject(c2);
 
   var express = require('express');
   var astClassesRouter = express.Router();

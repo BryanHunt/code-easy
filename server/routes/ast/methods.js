@@ -9,7 +9,7 @@ module.exports = function(app) {
 
   var f1 = { 
     name: "sayHello", 
-    returnType: 3, 
+    returnType: { id: 8, type: "ast/class"}, 
     parameters: [1], 
     body: 1, 
     documentation: "Says hello to the person specified by name",
@@ -18,7 +18,7 @@ module.exports = function(app) {
 
   var f2 = { 
     name: "f2", 
-    returnType: 2, 
+    returnType: {id: 1, type: "ast/primitive"}, 
     body: 2,  
     documentation: "This is the docs for f2",
     visibility: 2
@@ -27,8 +27,8 @@ module.exports = function(app) {
   functionStore.addObject(f1);
   functionStore.addObject(f2);
 
-  parameterStore.addObject({name: "name", type: 3});
-  parameterStore.addObject({name: "p2", type: 2});
+  parameterStore.addObject({name: "name", type: {id: 8, type: "ast/class"}});
+  parameterStore.addObject({name: "p2", type: {id: 1, type: "ast/primitive"}});
 
   blockStore.addObject({statements: [{id: 1, type: 'ast/return-statement'}]});
   blockStore.addObject({});

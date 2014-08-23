@@ -1,0 +1,11 @@
+Bundle-Version: 0.0.0.${tstamp}
+Private-Package:  \
+	net.springfieldusa.codeeasy.rest.ast,\
+	net.springfieldusa.codeeasy.rest.styles
+-buildpath:  \
+	com.eclipsesource.jaxrs.jersey-all,\
+	org.eclipselabs.emongo.api,\
+	org.mongodb.mongo-java-driver,\
+	org.eclipse.osgi.services
+-dsannotations:  \
+	*

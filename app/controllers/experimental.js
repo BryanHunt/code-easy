@@ -5,7 +5,12 @@ export default Ember.Controller.extend({
   styles: Ember.computed.alias("controllers.application.model"),
 
   types: function(){
-    return this.store.find('ast/type');
+    var self = this;
+    return this.store.find('ast/primitive').then(function(primitives) {
+      return self.store.find('ast/class').then(function(classes) {
+        return primitives.addObjects(classes);
+      });
+    });
   }.property(),
 
   actions: {

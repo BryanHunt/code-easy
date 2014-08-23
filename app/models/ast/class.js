@@ -1,6 +1,6 @@
 import DS from 'ember-data';
+import Type from './type';
 
-export default DS.Model.extend({
-  name: DS.attr('string'),
+export default Type.extend({
   methods: DS.hasMany('ast/method', {async: true})
 });
