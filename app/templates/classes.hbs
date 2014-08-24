@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Classes</h3>
+        <div class="toolbar pull-right">
+          {{#link-to 'classes.new' class="toolbar-link"}}
+            <span class="fa fa-plus" title="Add class"></span>
+          {{/link-to}}
+        </div>    
+      </div>
+      <div class="panel-body">
+        <ul>
+          {{#each class in model}}
+            <li>{{#link-to 'class' class.id}}{{class.name}}{{/link-to}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9">
+    {{outlet}}
+  </div>
+</div>

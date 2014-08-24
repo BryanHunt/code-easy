@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="keyword keyword-class">class</span> {{name}}</h3>
+    <div class="toolbar pull-right">
+      {{#bs-button class="toolbar-button" clicked='edit'}}
+        <span class="fa fa-edit" title="Edit class"></span>
+      {{/bs-button}}
+    </div>
+  </div>
+  <div class="panel-body">
+    <ul>
+      {{#each method in methods}}
+        <li>{{method.name}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

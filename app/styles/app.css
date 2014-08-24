@@ -2,6 +2,31 @@ html, body {
   margin: 20px;
 }
 
+.panel {
+  margin-top: 10px;
+}
+
+.panel-title {
+  display: inline-block;
+}
+
+.toolbar-button {
+  border: none;
+  background-color: inherit;
+  vertical-align: bottom;
+  padding: 0px 0px 0px 3px;
+}
+
+.toolbar-link {
+  text-decoration: none !important;
+  color: black;
+}
+
+.toolbar-link:hover {
+  background-color: inherit;
+  color: black;
+}
+
 .function-name {
   border-radius: 5px;
   padding-left: 2px;
