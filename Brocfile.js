@@ -24,7 +24,7 @@ app.import('vendor/veinjs/vein.js');
 var mergeTrees = require('broccoli-merge-trees');
 var pickFiles = require('broccoli-static-compiler');
 
-var fontTree = pickFiles('vendor/font-awesome/fonts', {
+var fontTree = pickFiles('bower_components/font-awesome/fonts', {
   srcDir: '/',
   files: ['*'],
   destDir: '/fonts'
