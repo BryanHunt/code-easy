@@ -33,15 +33,14 @@
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
 
-    <script>
-      window.CodeEasyENV = {{ENV}};
-      window.EmberENV = window.CodeEasyENV.EmberENV;
-    </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/test-support.js"></script>
     <script src="assets/code-easy.js"></script>
     <script src="testem.js"></script>
     <script>
+      window.CodeEasyENV = require('code-easy/config/environment')['default'];
+      window.EmberENV = window.CodeEasyENV.EmberENV;
+
       require('code-easy/tests/test-helper');
     </script>
     <script src="assets/test-loader.js"></script>

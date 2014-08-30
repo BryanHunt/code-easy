@@ -13,13 +13,11 @@
     <link rel="stylesheet" href="assets/code-easy.css">
   </head>
   <body>
-    <script>
-      window.CodeEasyENV = {{ENV}};
-      window.EmberENV = window.CodeEasyENV.EmberENV;
-    </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/code-easy.js"></script>
     <script>
+      window.CodeEasyENV = require('code-easy/config/environment')['default'];
+      window.EmberENV = window.CodeEasyENV.EmberENV;
       window.CodeEasy = require('code-easy/app')['default'].create(CodeEasyENV.APP);
     </script>
   </body>
