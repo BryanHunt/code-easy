@@ -2,7 +2,11 @@
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp();
+var app = new EmberApp({
+  'ember-cli-bootstrap': {
+    'importBootstrapJS': true
+  }
+});
 
 // Use `app.import` to add additional libraries to the generated
 // output files.
@@ -17,9 +21,8 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-app.import('vendor/font-awesome/css/font-awesome.css');
-app.import('vendor/bootstrap/dist/js/bootstrap.js');
-app.import('vendor/veinjs/vein.js');
+app.import('bower_components/font-awesome/css/font-awesome.css');
+app.import('bower_components/veinjs/vein.js');
 
 var mergeTrees = require('broccoli-merge-trees');
 var pickFiles = require('broccoli-static-compiler');

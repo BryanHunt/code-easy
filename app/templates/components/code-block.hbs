@@ -1,7 +1,3 @@
 {{#each statement in block.statements}}
-  {{#if statement.isReturn}}
-    {{return-statement statement=statement}}
-  {{else}}
-    {{code-statement statement=statement}}
-  {{/if}}
+  {{code-statement statement=statement layoutName=statement.layoutName}}
 {{/each}}
