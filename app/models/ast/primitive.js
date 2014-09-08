@@ -1,5 +1,3 @@
 import Type from './type';
 
-export default Type.extend({
-  
-});
+export default Type.extend({});

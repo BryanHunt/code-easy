@@ -1,9 +1,5 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  text: DS.attr('string'),
-
-  isReturn : function() {
-    return false;
-  }.property()
+  text: DS.attr('string')
 });
